@@ -6,23 +6,23 @@
 
 <br>
 
-# Nome do projeto
+# PROJETO FASE 6 – O COMEÇO DA REDE NEURAL
 
 ## Nome do grupo
 
-## Grupo 20
+## Grupo 11
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/caiorcastro/">Caio Rodrigues Castro</a> 
-- <a href="https://www.linkedin.com/in/ederson-badeca/">Ederson Luiz Badeca dos Santos</a> 
+- <a href="https://www.linkedin.com/in/ederson-badeca/">Celeste Leite dos Santos</a> 
 - <a href="https://www.linkedin.com/in/digitalmanagerfelipesoares/">Felipe Soares Nascimento</a>
-- <a href="https://www.linkedin.com/in/lfhillesheim/">Lucas Ferreira Hillesheim</a>
-- <a href="https://www.linkedin.com/in/luisfuturist/">Luís Fillipe Emidio</a>
+- <a href="https://www.linkedin.com/in/lfhillesheim/">Wellington Nascimento de Brito</a>
+
 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/in/lucas-gomes-moreira-15a8452a/">Lucas Gomes</a>
+- <a href="https://www.linkedin.com/in/leonardoorabona/">Leonardo Ruiz Orabona</a>
 ### Coordenador(a)
 - <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi Chiovato</a>
 
