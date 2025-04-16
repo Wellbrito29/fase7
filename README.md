@@ -14,9 +14,9 @@
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/caiorcastro/">Caio Rodrigues Castro</a> 
-- <a href="https://www.linkedin.com/in/ederson-badeca/">Celeste Leite dos Santos</a> 
+- <a href="https://www.linkedin.com/in//">Celeste Leite dos Santos</a> 
 - <a href="https://www.linkedin.com/in/digitalmanagerfelipesoares/">Felipe Soares Nascimento</a>
-- <a href="https://www.linkedin.com/in/lfhillesheim/">Wellington Nascimento de Brito</a>
+- <a href="https://www.linkedin.com/in//">Wellington Nascimento de Brito</a>
 
 
 
