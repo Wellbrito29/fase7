@@ -42,7 +42,7 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
 
 - 🔬 **Notebook com a implementação completa**: [Clique aqui para acessar o notebook no Colab](./src/FelipeSoares_Nascimento_RM560151_pbl_fase6_2.ipynb)
 - 🎥 **Vídeo demonstrativo**: [Assista aqui](LINK_DO_VÍDEO)
-- 📁 **Dataset utilizado**: [Link para download do dataset]([LINK_GOOGLE_DRIVE/ZIP](https://drive.google.com/drive/folders/1fsgCDWg8WxjsYQxehhssluejyK5v-xTY?usp=drive_link))
+- 📁 **Dataset utilizado**: [Link para download do dataset](https://drive.google.com/drive/folders/1fsgCDWg8WxjsYQxehhssluejyK5v-xTY?usp=drive_link)
 
 
 ## 🔧 Como executar o código
@@ -70,6 +70,50 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
    - Treinamento dos modelos
    - Inferência e avaliação
 5. Visualize os resultados diretamente nas saídas do notebook com métricas e imagens inferidas.
+
+## 📊 Resultados
+
+As análises e métricas extraídas das abordagens podem ser encontradas ao final do notebook, com discussões em células markdown. Foram incluídos:
+
+- Gráficos comparativos
+- Tabelas de métricas (Precision, Recall, mAP@0.5)
+- Tempo de inferência
+- Prints das detecções com bounding boxes
+
+## 🎯 Conclusão
+Nos nossos testes, vimos diferenças claras entre as abordagens que usamos para identificar alimentos, especialmente batatas e cenouras.
+
+O YOLO customizado foi o que teve o melhor desempenho. Ele conseguiu identificar e localizar os objetos com bastante precisão, atingindo cerca de 92% de acurácia no nosso conjunto de teste. Como ele desenha caixas ao redor dos objetos, é ideal para aplicações que precisam saber exatamente onde o alimento está, como em robôs de colheita ou sistemas automatizados. Por outro lado, exigiu bastante trabalho: levamos cerca de 4 horas de treino no Google Colab e ainda tivemos que rotular manualmente 200 imagens, o que consumiu várias horas.
+
+Já a CNN feita do zero seria uma boa opção para quem só precisa classificar imagens, sem se preocupar com localização. Apesar de termos enfrentado problemas técnicos no Colab e não conseguimos rodar os testes por completo, com base em pesquisas, estimamos que ela teria uma acurácia por volta de 85%, com um tempo de treino bem menor (uns 15 a 20 minutos). A vantagem aqui é que ela é mais fácil de implementar e não precisa de anotações detalhadas nas imagens – só o nome da classe já basta.
+
+Por fim, o YOLO padrão (pré-treinado) não funcionou bem para o nosso caso. Ele não reconheceu corretamente as cenouras nem as batatas, em alguns casos, confundiu cenoura com laranja e batata com maçã. A inferência foi bem rápida (em torno de 0,06 segundos por imagem), mas como ele não foi treinado com nossos dados, acabou não sendo útil sem um ajuste mais específico.
+
+##⚡ Pontos Fortes e Limitações
+
+YOLO Customizado
+  - ✅ Detecta e localiza objetos com alta precisão
+  - ✅ Acurácia alta (~92%) para cenoura e batata
+  - ✅ Consegue identificar vários objetos na mesma imagem
+  - ❌ Precisa de rotulagem manual demorada (6 a 8 horas)
+  - ❌ Treinamento longo (~4 horas no Colab)
+  - ❌ Mais complexo de ajustar e configurar
+
+CNN do Zero
+  - ✅ Mais simples de programar e treinar
+  - ✅ Só precisa saber a classe da imagem (sem caixas de anotação)
+  - ✅ Treinamento mais rápido (estimado em 15-20 min)
+  - ❌ Não mostra onde o objeto está na imagem
+  - ❌ Tivemos problemas técnicos para rodar no Colab
+  - ❌ Não é ideal para imagens com mais de um objeto
+
+YOLO Padrão
+  - ✅ Fácil de usar e pronto para testar
+  - ✅ Inferência super rápida (~0,06s por imagem)
+  - ✅ Bom para testes e protótipos rápidos
+  - ❌ Fraco em precisão para nossas classes específicas
+  - ❌ Confunde facilmente objetos parecidos
+  - ❌ Não serve para aplicações mais específicas sem ajuste
 
 
 ## 🗃 Histórico de lançamentos
