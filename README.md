@@ -29,37 +29,54 @@
 
 ## 📜 Descrição
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+Este projeto tem como objetivo aplicar e comparar diferentes abordagens de Visão Computacional na identificação de alimentos (cenoura e batata), com foco em tarefas como classificação e detecção de objetos. As soluções exploradas incluem:
+
+- YOLOv8 Customizado (detecção e localização)
+- YOLOv8 Pré-treinado (sem fine-tuning)
+- CNN do zero (classificação)
+
+Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e desempenho na inferência, considerando cenários reais como automação agrícola.
 
 
 ## 📁 Estrutura de pastas
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+- 🔬 **Notebook com a implementação completa**: [Clique aqui para acessar o notebook no Colab](./src/FelipeSoares_Nascimento_RM560151_pbl_fase6_2.ipynb)
+- 🎥 **Vídeo demonstrativo**: [Assista aqui](LINK_DO_VÍDEO)
+- 📁 **Dataset utilizado**: [Link para download do dataset]([LINK_GOOGLE_DRIVE/ZIP](https://drive.google.com/drive/folders/1fsgCDWg8WxjsYQxehhssluejyK5v-xTY?usp=drive_link))
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
-
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
-
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
-
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
-
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
-
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
-
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+### Pré-requisitos:
+- Google Colab ou ambiente Jupyter
+- GPU recomendada para treinamento (T4 no Colab)
+- Bibliotecas:
+  - `ultralytics`
+  - `torch`
+  - `opencv-python`
+  - `numpy`
+  - `matplotlib`
+  - `seaborn`
+  - `scikit-learn`
+
+(Instalação automática via `pip install` dentro do notebook)
+
+### Passo a passo:
+1. Acesse o [notebook](LINK_DO_COLAB).
+2. Monte o Google Drive com o dataset (instrução incluída no notebook).
+3. [Link para download do dataset](LINK_GOOGLE_DRIVE/ZIP)
+4. Execute as células em sequência:
+   - Preparação dos dados
+   - Treinamento dos modelos
+   - Inferência e avaliação
+5. Visualize os resultados diretamente nas saídas do notebook com métricas e imagens inferidas.
 
 
 ## 🗃 Histórico de lançamentos
 
-* 0.5.0 - XX/XX/2024
+* 2.5.0 - 16/04//2025
     * 
-* 0.4.0 - XX/XX/2024
+* 1.4.0 - 15/04/2024
 
 
 ## 📋 Licença
