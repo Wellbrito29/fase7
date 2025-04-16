@@ -41,7 +41,7 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
 ## 📁 Estrutura de pastas
 
 - 🔬 **Notebook com a implementação completa**: [Clique aqui para acessar o notebook no Colab](./src/FelipeSoares_Nascimento_RM560151_pbl_fase6_2.ipynb)
-- 🎥 **Vídeo demonstrativo**: [Assista aqui](LINK_DO_VÍDEO)
+- 🎥 **Vídeo demonstrativo**: [Assista aqui](LINK_DO_VÍDEO) 
 - 📁 **Dataset utilizado**: [Link para download do dataset](https://drive.google.com/drive/folders/1fsgCDWg8WxjsYQxehhssluejyK5v-xTY?usp=drive_link)
 
 
@@ -62,9 +62,10 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
 (Instalação automática via `pip install` dentro do notebook)
 
 ### Passo a passo:
-1. Acesse o [notebook](LINK_DO_COLAB).
+1. Acesse o [notebook](https://colab.research.google.com/drive/1a4WzYzeUrFlogsQUIHSOoyc4NrMn-Juk?usp=sharing)
 2. Monte o Google Drive com o dataset (instrução incluída no notebook).
-3. [Link para download do dataset](LINK_GOOGLE_DRIVE/ZIP)
+3. [Link para download do dataset](https://drive.google.com/drive/folders/1fsgCDWg8WxjsYQxehhssluejyK5v-xTY?usp=drive_link)
+  - faça o download do arquivo zip "dataset-cenoura-batata.zip" e sua no seu drive o arquivo "dataset"
 4. Execute as células em sequência:
    - Preparação dos dados
    - Treinamento dos modelos
@@ -75,7 +76,6 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
 
 As análises e métricas extraídas das abordagens podem ser encontradas ao final do notebook, com discussões em células markdown. Foram incluídos:
 
-- Gráficos comparativos
 - Tabelas de métricas (Precision, Recall, mAP@0.5)
 - Tempo de inferência
 - Prints das detecções com bounding boxes
