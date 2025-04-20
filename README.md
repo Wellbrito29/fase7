@@ -91,7 +91,7 @@ Já a CNN feita do zero seria uma boa opção para quem só precisa classificar 
 
 Por fim, o YOLO padrão (pré-treinado) não funcionou bem para o nosso caso. Ele não reconheceu corretamente as cenouras nem as batatas, em alguns casos, confundiu cenoura com laranja e batata com maçã. A inferência foi bem rápida (em torno de 0,06 segundos por imagem), mas como ele não foi treinado com nossos dados, acabou não sendo útil sem um ajuste mais específico.
 
-##⚡ Pontos Fortes e Limitações
+## ⚡ Pontos Fortes e Limitações
 
 YOLO Customizado
   - ✅ Detecta e localiza objetos com alta precisão
