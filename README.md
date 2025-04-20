@@ -73,13 +73,14 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
    - Inferência e avaliação
 5. Visualize os resultados diretamente nas saídas do notebook com métricas e imagens inferidas.
 
-## 📊 Resultados
+## 📊 Resultados comparativo das Abordagens
 
-As análises e métricas extraídas das abordagens podem ser encontradas ao final do notebook, com discussões em células markdown. Foram incluídos:
 
-- Tabelas de métricas (Precision, Recall, mAP@0.5)
-- Tempo de inferência
-- Prints das detecções com bounding boxes
+| Abordagem        | Facilidade | Precisão | Tempo Treinamento | Tempo Inferência |
+|------------------|------------|----------|-------------------|------------------|
+| YOLO Customizado | Média      | 0,90     | 1h (60 épocas)    | 0,1s/imagem      |
+| YOLO Padrão      | Alta       | 0,00     | 0s                | 0,1s/imagem      |
+| CNN do Zero      | Média      | 0,85     | 15min             | 0,05s/
 
 ## 🎯 Conclusão
 Nos nossos testes, vimos diferenças claras entre as abordagens que usamos para identificar alimentos, especialmente batatas e cenouras.
