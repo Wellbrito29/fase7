@@ -64,7 +64,8 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
 ### Passo a passo:
 1. Acesse o [notebook](https://colab.research.google.com/drive/1a4WzYzeUrFlogsQUIHSOoyc4NrMn-Juk?usp=sharing)
 2. Monte o Google Drive com o dataset (instrução incluída no notebook).
-3. [Link para download do dataset](https://drive.google.com/drive/folders/1fsgCDWg8WxjsYQxehhssluejyK5v-xTY?usp=drive_link)
+3. [Link para download do dataset](https://drive.google.com/file/d/1Yj9sYI9tum4c2c6ysYFp4-Cw4MS6WZCg/view?usp=drive_link)
+
   - faça o download do arquivo zip "dataset-cenoura-batata.zip" e sua no seu drive o arquivo "dataset"
 4. Execute as células em sequência:
    - Preparação dos dados
