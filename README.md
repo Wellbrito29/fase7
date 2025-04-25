@@ -78,40 +78,39 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
 
 | Abordagem        | Facilidade | Precisão | Tempo Treinamento | Tempo Inferência |
 |------------------|------------|----------|-------------------|------------------|
-| YOLO Customizado | Média      | 0,90     | 1h (60 épocas)    | 0,1s/imagem      |
-| YOLO Padrão      | Alta       | 0,00     | 0s                | 0,1s/imagem      |
-| CNN do Zero      | Média      | 0,85     | 15min             | 0,05s/
+| YOLO Customizado | Média      | 0,84     | 3h (60 épocas)    | 4,3s/imagem      |
+| YOLO Padrão      | Alta       | 0,10     | 0s                | 12,7s/imagem      |
+| CNN do Zero      | Média      | 0,94     | 2min             | 25,25s/
 
 ## 🎯 Conclusão
 Nos nossos testes, vimos diferenças claras entre as abordagens que usamos para identificar alimentos, especialmente batatas e cenouras.
 
-O YOLO customizado foi o que teve o melhor desempenho. Ele conseguiu identificar e localizar os objetos com bastante precisão, atingindo cerca de 92% de acurácia no nosso conjunto de teste. Como ele desenha caixas ao redor dos objetos, é ideal para aplicações que precisam saber exatamente onde o alimento está, como em robôs de colheita ou sistemas automatizados. Por outro lado, exigiu bastante trabalho: levamos cerca de 4 horas de treino no Google Colab e ainda tivemos que rotular manualmente 200 imagens, o que consumiu várias horas.
+O YOLO customizado O YOLO customizado foi o que apresentou o melhor desempenho geral, uma precisão de 83,84%, indicando ótima capacidade de identificar e localizar os objetos com precisão. Como ele desenha caixas ao redor dos alimentos, é ideal para aplicações em que é necessário saber exatamente onde o alimento está, como em robôs de colheita ou sistemas de triagem automatizada. Por outro lado, exigiu um esforço considerável: foram 3 horas de treinamento no Google Colab e mais o tempo de anotação manual de 200 imagens, o que demandou bastante dedicação.
 
-Já a CNN feita do zero seria uma boa opção para quem só precisa classificar imagens, sem se preocupar com localização. Apesar de termos enfrentado problemas técnicos no Colab e não conseguimos rodar os testes por completo, com base em pesquisas, estimamos que ela teria uma acurácia por volta de 85%, com um tempo de treino bem menor (uns 15 a 20 minutos). A vantagem aqui é que ela é mais fácil de implementar e não precisa de anotações detalhadas nas imagens – só o nome da classe já basta.
+Já a CNN feita do zero A CNN feita do zero foi eficiente para tarefas de classificação simples (sem localização), com uma precisão estimada de 94%. Ela teve tempo de treinamento curto (cerca de 2 minutos) e exigiu apenas o nome da classe em cada imagem, não foi necessário anotar com caixas. No entanto, sua inferência foi muito lenta (25,2 segundos por imagem), o que limita seu uso em sistemas em tempo real.
 
-Por fim, o YOLO padrão (pré-treinado) não funcionou bem para o nosso caso. Ele não reconheceu corretamente as cenouras nem as batatas, em alguns casos, confundiu cenoura com laranja e batata com maçã. A inferência foi bem rápida (em torno de 0,06 segundos por imagem), mas como ele não foi treinado com nossos dados, acabou não sendo útil sem um ajuste mais específico.
+Por fim, o YOLO padrão, mesmo sem treinamento com nossos dados, foi capaz de reconhecer alguns objetos do nosso conjunto de teste, como cenouras, mas de forma inconsistente. Em vários casos, confundiu cenoura com laranja e batata com maçã, o que mostra que não estava adaptado ao nosso domínio específico sua precisão estimado foi de aproximadamente 10%, o que é considerado baixo.
 
 ## ⚡ Pontos Fortes e Limitações
 
 YOLO Customizado
   - ✅ Detecta e localiza objetos com alta precisão
-  - ✅ Acurácia alta (~92%) para cenoura e batata
+  - ✅ Acurácia alta (~84%) para cenoura e batata
   - ✅ Consegue identificar vários objetos na mesma imagem
-  - ❌ Precisa de rotulagem manual demorada (6 a 8 horas)
-  - ❌ Treinamento longo (~4 horas no Colab)
+  - ❌ Precisa de rotulagem manual demorada (2 a 3 horas)
+  - ❌ Treinamento longo (~1 horas no Colab)
   - ❌ Mais complexo de ajustar e configurar
 
 CNN do Zero
   - ✅ Mais simples de programar e treinar
   - ✅ Só precisa saber a classe da imagem (sem caixas de anotação)
-  - ✅ Treinamento mais rápido (estimado em 15-20 min)
+  - ✅ Treinamento mais rápido (estimado em 1-2 min)
   - ❌ Não mostra onde o objeto está na imagem
   - ❌ Tivemos problemas técnicos para rodar no Colab
   - ❌ Não é ideal para imagens com mais de um objeto
 
 YOLO Padrão
   - ✅ Fácil de usar e pronto para testar
-  - ✅ Inferência super rápida (~0,06s por imagem)
   - ✅ Bom para testes e protótipos rápidos
   - ❌ Fraco em precisão para nossas classes específicas
   - ❌ Confunde facilmente objetos parecidos
