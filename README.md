@@ -38,7 +38,7 @@ Este projeto tem como objetivo aplicar e comparar diferentes abordagens de Visã
 Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e desempenho na inferência, considerando cenários reais como automação agrícola.
 
 
-## 📁 Estrutura de pastas
+## 📁 Arquivos e Vídeo
 
 - 🔬 **Notebook com a implementação completa**: [Clique aqui para acessar o notebook no Colab](./src/FelipeSoares_Nascimento_RM560151_pbl_fase6_2.ipynb)
 - 🎥 **Vídeo demonstrativo**: [Assista aqui](LINK_DO_VÍDEO) 
