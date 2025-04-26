@@ -41,7 +41,7 @@ Foram avaliadas acurácia, tempo de treinamento, facilidade de implementação e
 ## 📁 Arquivos e Vídeo
 
 - 🔬 **Notebook com a implementação completa**: [Clique aqui para acessar o notebook no Colab](./src/FelipeSoares_Nascimento_RM560151_pbl_fase6_2.ipynb)
-- 🎥 **Vídeo demonstrativo**: [Assista aqui](LINK_DO_VÍDEO) 
+- 🎥 **Vídeo demonstrativo**: [Assista aqui](https://youtu.be/6i2bBIzvC9Q)
 - 📁 **Dataset utilizado**: [Link para download do dataset](https://drive.google.com/file/d/1Yj9sYI9tum4c2c6ysYFp4-Cw4MS6WZCg/view?usp=drive_link)
 
 
