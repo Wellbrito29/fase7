@@ -1,0 +1,6 @@
+train: /Users/wellingtonnascimento/Documents/IA/Fiap/fase7/fase6_visao_computacional/dataset/treinamento
+val: /Users/wellingtonnascimento/Documents/IA/Fiap/fase7/fase6_visao_computacional/dataset/validacao
+test: /Users/wellingtonnascimento/Documents/IA/Fiap/fase7/fase6_visao_computacional/dataset/teste
+
+nc: 2
+names: ['cenoura', 'batata']
