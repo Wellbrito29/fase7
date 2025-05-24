@@ -9,7 +9,7 @@
 
 # 🌾 Projeto Fase 7 – Sistema Completo de Gestão Agrícola Inteligente
 
-## 👥 Grupo 11
+## 👥 Grupo 39
 
 ### 👨‍🎓 Integrantes:
 - [Caio Rodrigues Castro](https://www.linkedin.com/in/caiorcastro/)
@@ -25,15 +25,25 @@
 
 ## 📜 Descrição
 
-O projeto Fase 7 consolida as entregas das fases anteriores (1 a 6) em um sistema único e completo de **gestão agrícola inteligente**, com:
+Nesta fase 7, consolidamos todas as entregas das Fases 1 a 6 em um sistema único, completo e funcional, voltado à gestão inteligente no agronegócio. O projeto integra diferentes tecnologias e serviços em uma única plataforma operacional, com foco em automação, predição e tomada de decisão baseada em dados.
 
-- Dashboard interativo em Streamlit;
-- Cálculo de área e manejo de insumos (Fase 1);
-- Banco de dados relacional com DER/MER e integração (Fase 2);
-- Simulação IoT com sensores e automação de irrigação (Fase 3);
-- Predição com machine learning e classificação de irrigação (Fase 4);
-- Integração com serviços na AWS e envio de alertas com SNS (Fase 5);
-- Visão computacional com YOLOv8 para classificação de culturas (Fase 6).
+Principais componentes integrados no sistema:
+
+📊 Dashboard interativo com Streamlit: Interface central para visualização e navegação entre as funcionalidades do sistema, permitindo acesso fácil e intuitivo às análises e operações.
+
+🌱 Cálculo de área e manejo de insumos (Fase 1): Ferramentas para estimar áreas de cultivo e gerenciar o uso eficiente de recursos agrícolas.
+
+🗃️ Banco de dados relacional com DER/MER e integração (Fase 2): Estrutura sólida de armazenamento com modelagem relacional e interoperabilidade entre os módulos.
+
+💧 Simulação IoT com sensores e automação de irrigação (Fase 3): Módulo de sensoriamento simulado para tomada de decisão automatizada em tempo real.
+
+📈 Predição com machine learning e classificação de irrigação (Fase 4): Algoritmos de aprendizado supervisionado para prever necessidades hídricas e otimizar o uso da água.
+
+☁️ Integração com AWS e envio de alertas via SNS (Fase 5): Comunicação em nuvem para notificações automáticas e integração com serviços escaláveis.
+
+🧠 Visão computacional com YOLOv8 (Fase 6): Reconhecimento de culturas agrícolas em imagens, utilizando deep learning para classificação visual em campo.
+
+Este sistema foi pensado para ser modular e adaptável, podendo ser facilmente ajustado para outros setores além do agronegócio, bastando substituir os conjuntos de dados específicos.
 
 ---
 
